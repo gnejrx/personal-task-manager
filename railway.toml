@@ -4,5 +4,8 @@ builder = "nixpacks"
 [build.nixpacksPlan.phases.setup]
 nixPkgs = ["php84", "php84Packages.composer"]
 
+[build.nixpacksPlan.phases.install]
+cmds = ["composer install --no-dev --no-scripts --optimize-autoloader"]
+
 [start]
 cmd = "php artisan serve --host=0.0.0.0 --port=$PORT"
