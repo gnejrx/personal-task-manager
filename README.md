@@ -85,6 +85,10 @@ Users can remove tasks that are no longer needed.
 2. Open the project folder.
 3. Install dependencies:
 
+## Project Screenshot
+
+![Personal Task Manager](task-manager-screenshot.png)
+
 ```bash
 composer install
 npm install
